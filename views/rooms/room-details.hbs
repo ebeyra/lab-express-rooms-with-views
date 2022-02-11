@@ -1,0 +1,25 @@
+<h2>You are in {{results.name}}</h2>
+<ul>
+  Room Name:
+  {{results.name}}
+  <br />
+  Description:
+  {{results.description}}
+  <br />
+  Image URL:
+  {{results.imageUrl}}
+  <br />
+  Owner:
+  {{!-- {{ownerInfo.fullName}} --}}
+  <br />
+  Reviews:
+  {{results.reviews}}
+</ul>
+
+<form method="get" action="/rooms/{{results._id}}/edit">
+  <button type="submit">Edit Room</button>
+</form>
+
+<form method="POST" action="/rooms/{{results._id}}/delete">
+  <button type="submit">Delete Room</button>
+</form>

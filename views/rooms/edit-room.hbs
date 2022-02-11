@@ -1,0 +1,13 @@
+<h2>Edit Room Details</h2>
+<form method="POST" action="/rooms/{{details._id}}/edit">
+  <label>Name:</label>
+  <input type="text" value="{{details.name}}" name="name" />
+  <br />
+  <label>Description:</label>
+  <input type="text" value="{{details.description}}" name="description" />
+  <br />
+  <label>Image URL:</label>
+  <input type="text" value="{{details.imageUrl}}" name="imageUrl" />
+  <br />
+  <button type="submit">Confirm changes</button>
+</form>
